@@ -16,10 +16,10 @@ const App = () => {
     axios
     .get('https://swapi.dev/api/people')
     .then( res => {
-      setData(res.data.results)
+      setData(res.data)
     })
     .catch( err => alert(err))
-  });
+  },[]);
 
   return (
     <div className="App">
