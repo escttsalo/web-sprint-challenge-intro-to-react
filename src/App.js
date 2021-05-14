@@ -25,7 +25,7 @@ const App = () => {
     <div className="App">
       <h1 className="Header">Characters</h1>
       {
-        data.map( char => {
+        data && data.map( char => {
           return <Character name={char.name} birthYear={char.birth_year}></Character>
         })
       }
